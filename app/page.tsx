@@ -45,14 +45,14 @@ export default function Home() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.4 }}
-            className="space-x-4"
+            className="flex flex-col space-y-4"
           >
             <Button size="lg" className="bg-yellow-500 hover:bg-yellow-600 text-black">
               <Phone className="mr-2 h-5 w-5" />
               777 508 247
             </Button>
             <Link href="/kontakt">
-              <Button size="lg" variant="outline" className="bg-white/10 hover:bg-white/20 text-white">
+              <Button size="lg" variant="outline" className="bg-white/10 hover:bg-white/20 text-white w-full">
                 Kontaktujte nás
               </Button>
             </Link>
