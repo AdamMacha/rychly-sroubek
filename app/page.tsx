@@ -49,7 +49,7 @@ export default function Home() {
         </div>
 
         <motion.div 
-          className="absolute bottom-8 left-auto transform -translate-x-1/2 flex flex-col items-center"
+          className="absolute bottom-16 left-auto transform -translate-x-1/2 flex flex-col items-center"
           animate={{
             y: [0, 10, 0],
           }}
