@@ -1,23 +1,12 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Phone, Clock, Drill, CheckCircle } from "lucide-react";
+import { Phone, Clock, Drill, CheckCircle, ChevronDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { ServiceCard } from "./components/ServiceCard";
 import { FeatureCard } from "./components/FeatureCard";
 import Link from "next/link";
-
-const services = [
-  { title: "Instalatérské práce", icon: "🔧", slug: "instalaterske-prace" },
-  { title: "Topenářské práce", icon: "🔥", slug: "topenarske-prace" },
-  { title: "Stavební práce", icon: "🏗️", slug: "stavebni-prace" },
-  { title: "Elektroinstalace", icon: "⚡", slug: "elektroinstalace" },
-  { title: "Malování", icon: "🎨", slug: "malovani" },
-  { title: "Montáž nábytku", icon: "🪑", slug: "montaz-nabytku" },
-  { title: "Zahradní práce", icon: "🌳", slug: "zahradni-prace" },
-  { title: "Sádrokartony", icon: "🏢", slug: "sadrokartony" },
-  { title: "Stěhování", icon: "📦", slug: "stehovani" },
-];
+import { services } from "./data/services";
 
 export default function Home() {
   return (
@@ -58,6 +47,21 @@ export default function Home() {
             </Link>
           </motion.div>
         </div>
+
+        <motion.div 
+          className="absolute bottom-8 left-auto transform -translate-x-1/2 flex flex-col items-center"
+          animate={{
+            y: [0, 10, 0],
+          }}
+          transition={{
+            duration: 1.5,
+            repeat: Infinity,
+            ease: "easeInOut",
+          }}
+        >
+          <span className="text-white text-lg mb-2">Potáhněte dolů</span>
+          <ChevronDown className="w-10 h-10 text-white" />
+        </motion.div>
       </section>
 
       {/* Features */}
