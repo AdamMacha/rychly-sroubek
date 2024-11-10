@@ -25,7 +25,7 @@ export default function Contact() {
                 </div>
                 <div className="flex items-center">
                   <Mail className="h-5 w-5 mr-3 text-yellow-500" />
-                  <p className="text-lg">info@rychlysroubek.cz</p>
+                  <p className="text-lg">rychlysroubek@seznam.cz</p>
                 </div>
                 <div className="flex items-center">
                   <MapPin className="h-5 w-5 mr-3 text-yellow-500" />
