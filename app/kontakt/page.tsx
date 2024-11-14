@@ -21,7 +21,7 @@ export default function Contact() {
               <div className="space-y-4">
                 <div className="flex items-center">
                   <Phone className="h-5 w-5 mr-3 text-yellow-500" />
-                  <p className="text-lg">777 508 247</p>
+                  <a href="tel:777508247" className="text-lg hover:text-yellow-600 transition-colors">777 508 247</a>
                 </div>
                 <div className="flex items-center">
                   <Mail className="h-5 w-5 mr-3 text-yellow-500" />
@@ -42,9 +42,15 @@ export default function Contact() {
 
             <div>
               <h2 className="text-2xl font-semibold mb-4">Zavolejte nám</h2>
-              <Button size="lg" className="bg-yellow-500 hover:bg-yellow-600 text-black">
-                <Phone className="mr-2 h-5 w-5" />
-                777 508 247
+              <Button 
+                size="lg" 
+                className="bg-yellow-500 hover:bg-yellow-600 text-black"
+                asChild
+              >
+                <a href="tel:777508247">
+                  <Phone className="mr-2 h-5 w-5" />
+                  777 508 247
+                </a>
               </Button>
             </div>
           </div>

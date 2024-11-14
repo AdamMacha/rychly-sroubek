@@ -36,9 +36,15 @@ export default function Home() {
             transition={{ delay: 0.4 }}
             className="flex flex-col space-y-4"
           >
-            <Button size="lg" className="bg-yellow-500 hover:bg-yellow-600 text-black">
-              <Phone className="mr-2 h-5 w-5" />
-              777 508 247
+            <Button 
+              size="lg" 
+              className="bg-yellow-500 hover:bg-yellow-600 text-black"
+              asChild
+            >
+              <a href="tel:777508247">
+                <Phone className="mr-2 h-5 w-5" />
+                777 508 247
+              </a>
             </Button>
             <Link href="/kontakt">
               <Button size="lg" variant="outline" className="bg-white/10 hover:bg-white/20 text-white w-full">

@@ -36,9 +36,15 @@ export function ServiceContent({ service }: ServiceContentProps) {
               Předběžnou cenovou nabídku s orientační cenou za práci a materiál vám dáme vědět dříve než k vám vyjedeme.
             </p>
             <div className="flex flex-col justify-center items-center space-y-4">
-              <Button size="lg" className="bg-yellow-500 hover:bg-yellow-600 text-black w-full max-w-sm h-auto py-2">
-                <Phone className="mr-2 h-5 w-5" />
-                777 508 247
+              <Button 
+                size="lg" 
+                className="bg-yellow-500 hover:bg-yellow-600 text-black"
+                asChild
+              >
+                <a href="tel:777508247">
+                  <Phone className="mr-2 h-5 w-5" />
+                  777 508 247
+                </a>
               </Button>
               <Link href="/kontakt" className="w-full max-w-sm">
                 <Button size="lg" variant="outline" className="w-full h-full py-2">
